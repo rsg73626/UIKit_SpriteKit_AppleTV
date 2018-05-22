@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QJj-AY-ZVs">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nxf-34-3hf">
+            <objects>
+                <viewController id="QJj-AY-ZVs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h7h-FZ-LBw"/>
+                        <viewControllerLayoutGuide type="bottom" id="fou-DS-aDn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFn-4i-M4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wjR-sm-hDk">
+                                <rect key="frame" x="710" y="290" width="500" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-NY-c7Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-Gm-q0f">
+                                        <rect key="frame" x="0.0" y="187" width="500" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Go to Another UI"/>
+                                        <connections>
+                                            <segue destination="gaH-PX-fYB" kind="show" id="McW-ST-hx1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQu-Zf-g3K">
+                                        <rect key="frame" x="0.0" y="414" width="500" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Go to SpriteKit Scene"/>
+                                        <connections>
+                                            <segue destination="499-42-d0g" kind="show" id="RzN-iW-lGE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="DIr-ac-9AC"/>
+                                    <constraint firstAttribute="width" constant="500" id="EgG-fl-fze"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wjR-sm-hDk" firstAttribute="centerY" secondItem="qFn-4i-M4Q" secondAttribute="centerY" id="662-Kh-2qR"/>
+                            <constraint firstItem="wjR-sm-hDk" firstAttribute="centerX" secondItem="qFn-4i-M4Q" secondAttribute="centerX" id="svw-ld-Nkv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WVo-Kh-5zX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="po2-qi-uK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tev-fM-tm2">
+            <objects>
+                <viewController id="gaH-PX-fYB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VOW-5P-hIg"/>
+                        <viewControllerLayoutGuide type="bottom" id="G0A-Kn-qqc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UAN-bA-qFN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Another UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hor-Tt-Hk7">
+                                <rect key="frame" x="868" y="517" width="184" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hor-Tt-Hk7" firstAttribute="centerX" secondItem="UAN-bA-qFN" secondAttribute="centerX" id="VHe-Ya-tNa"/>
+                            <constraint firstItem="hor-Tt-Hk7" firstAttribute="centerY" secondItem="UAN-bA-qFN" secondAttribute="centerY" id="c2F-6q-pa5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPn-oQ-6bf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPG-sC-DmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="152"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="dEh-eV-dlg">
+            <objects>
+                <viewController id="499-42-d0g" customClass="GameViewController" customModule="MC8_TestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TiC-Vw-u93"/>
+                        <viewControllerLayoutGuide type="bottom" id="3TX-uQ-fmp"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="weF-Pa-zaM" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6df-27-8hi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-Nd-Df7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="1995"/>
+        </scene>
+    </scenes>
+</document>
